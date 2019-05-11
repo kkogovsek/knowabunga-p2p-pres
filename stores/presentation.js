@@ -8,7 +8,7 @@ const menuItems = [
 const pres = [
   {
     type: 'title',
-    title: 'download app from <url_here> for better experience'
+    title: 'download app from http://bit.ly/knowabungap2p for better experience'
   },
   {
     type: 'headline',
