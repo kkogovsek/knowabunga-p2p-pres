@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +19,29 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.0",
+    "electron-builder": "^20.40.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "choo": "^6.13.3",
+    "choo-devtools": "^2.5.1",
+    "discovery-swarm": "^5.1.4",
+    "hypercore": "^6.20.2",
+    "multifeed": "^2.0.3",
+    "pump": "^3.0.0",
+    "random-access-file": "^2.1.1",
+    "random-access-memory": "^3.1.1",
+    "random-access-web": "^2.0.1",
+    "sheetify": "^7.3.3",
+    "signalhub": "^4.9.0",
+    "tachyons": "^4.11.1",
+    "webrtc-swarm": "^2.9.0"
+  },
+  "build": {
+    "appId": "kkogovsek.press.knowabunga",
+    "mac": {
+      "category": "public.app-category.education"
+    }
   }
 }
