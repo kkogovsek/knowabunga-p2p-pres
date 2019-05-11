@@ -5,7 +5,7 @@ var signalhub = require('signalhub')
 var swarm = require('webrtc-swarm')
 var pump = require('pump')
 
-const dbName = 'knowabunga-prague-klemen-p2p-dev-1'
+const dbName = 'knowabunga-prague-klemen-p2p-live'
 
 function store (state, emmiter) {
   state.log = []
