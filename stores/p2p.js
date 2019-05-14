@@ -72,8 +72,8 @@ function store (state, emmiter) {
           console.log('secret key:', feed.secretKey.toString('hex'))
           // we use the discovery as the topic
 
-          // var hub = signalhub(dbName, ['https://signalhub-jccqtwhdwc.now.sh'])
-          var hub = signalhub(dbName)
+          var hub = signalhub(dbName, ['https://signalhub-jccqtwhdwc.now.sh'])
+          // var hub = signalhub(dbName)
           const sw = swarm(hub)
           // const sw = discovery()
           // sw.join('test-offline')
